@@ -102,8 +102,7 @@ stuDA_t* formDynamicArray(stuLL_t *pHEAD_LL, size_t student_count)
 stuDA_t* sortDynamicArray(stuDA_t *pHEAD, const sort_t sort_type,
 		const size_t array_size)
 {
-	// PROBLEM #5: complete the code for this function
-	//	       NOTE: PLEASE COMMIT CHANGES ONCE YOUR DONE THIS FUNCTION
+	                                                       // PROBLEM #5: complete the code for this function
 
 	switch (sort_type)
 	{
@@ -111,9 +110,11 @@ stuDA_t* sortDynamicArray(stuDA_t *pHEAD, const sort_t sort_type,
 		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_fName);
 		break;
 	case gNamesort:
-		// fill the code here for Part a)
+		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_gName);
+		break;
 	case gradesort:
-		// fill the code here for Part b)
+		qsort(pHEAD, array_size, sizeof(stuRec_t), comparo_grade);
+		break;
 	}
 	return pHEAD;
 }
