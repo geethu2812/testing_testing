@@ -78,6 +78,8 @@ int comparo_grade(const void *pA, const void *pB)
  */
 stuDA_t* formDynamicArray(stuLL_t *pHEAD_LL, size_t student_count)
 {
+
+
 	/* create an array with enough elements */
 	stuDA_t *pHEAD_DA = (stuDA_t*) malloc(student_count * sizeof(stuRec_t));
 
@@ -122,7 +124,7 @@ stuDA_t* sortDynamicArray(stuDA_t *pHEAD, const sort_t sort_type,
 /*
  * function sends the dynamic array data to stdout
  */
-void displayDynamicArray(stuDA_t *pHEAD, const size_t array_size)
+void displayDynamicArray(stuDA_t *pHEAD,  const size_t array_size)
 {
 	size_t i;
 	printf("%-12s %-12s %-5s\n", "FAMILY NAME", "GIVEN NAME", "GRADE");

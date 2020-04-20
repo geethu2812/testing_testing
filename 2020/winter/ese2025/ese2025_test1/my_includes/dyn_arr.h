@@ -32,10 +32,10 @@ typedef enum sortenum sort_t;
  * PUBLIC FUNCTION PROTOTYPES
  *****************************************************/
 
-stuDA_t* formDynamicArray(stuLL_t*, size_t);
+stuDA_t* formDynamicArray(stuLL_t*,const size_t);
 
 stuDA_t* sortDynamicArray(stuDA_t*, const sort_t, const size_t);
 
-void displayDynamicArray(stuDA_t*, const size_t);
+void displayDynamicArray(stuDA_t*,  size_t);
 
 #endif /* MY_INCLUDES_DYN_ARR_H_ */

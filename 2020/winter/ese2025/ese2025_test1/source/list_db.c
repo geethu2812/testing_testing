@@ -96,7 +96,9 @@ stuLL_t* findLinkedList(stuLL_t *pHEAD, char *targetFamilyName)
 		}                //traverse the list till it satisfies condition in the loop
 		printf("\n");
 	}
+
 	return pW;
+
 }
 
 /*
@@ -106,7 +108,7 @@ void displayNodeLinkedList(stuLL_t *pNode)
 {
 	printf("%-12s %-12s %-5s\n", "FAMILY NAME", "GIVEN NAME", "GRADE");
 	if (pNode != NULL)
-		printf("%-12s %-12s %2.3f\n", pNode->data.fName, pNode->data.gName,
+		printf("%-12s %-12s %f2.3\n", pNode->data.fName, pNode->data.gName,
 				pNode->data.grade);
 	else
 		printf("RECORD NOT FOUND!\n");
