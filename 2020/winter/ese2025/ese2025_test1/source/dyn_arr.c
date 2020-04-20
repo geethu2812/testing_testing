@@ -56,7 +56,21 @@ int comparo_gName(const void *pA, const void *pB)
  */
 int comparo_grade(const void *pA, const void *pB)
 {
-	                                                        //PROBLEM #3: complete the code for this function
+	    // extract student records
+		stuDA_t student_A = *((stuDA_t*) pA);
+		stuDA_t student_B = *((stuDA_t*) pB);
+
+		// get student grades
+		float grade_A = student_A.data.grade; //PROBLEM #4: complete the code for this function
+		float grade_B = student_B.data.grade;
+
+		if (grade_A < grade_B)
+				return -1;
+			else if (grade_A > grade_B)
+				return +1;
+
+			return 0;         // default return if grade_A==grade_B
+
 }
 
 /*
