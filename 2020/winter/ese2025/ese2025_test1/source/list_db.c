@@ -19,7 +19,7 @@
  */
 stuLL_t* createNodeLinkedList(void)
 {
-  stuLL_t* pNew= (stuLL_t*) malloc(sizeof(stuLL_t*)); // PROBLEM #1: complete the code for this function
+  stuLL_t* pNew= (stuLL_t*) malloc(sizeof(stuLL_t)); // PROBLEM #1: complete the code for this function
   return pNew;
 }                               //creating a new node using dynamic memory allocation and retuns the node of stuLL_t type.
 

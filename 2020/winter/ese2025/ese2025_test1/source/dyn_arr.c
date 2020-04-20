@@ -67,7 +67,7 @@ int comparo_grade(const void *pA, const void *pB)
 		if (grade_A < grade_B)
 				return -1;
 			else if (grade_A > grade_B)
-				return +1;
+				return 1;
 
 			return 0;         // default return if grade_A==grade_B
 
@@ -128,7 +128,7 @@ void displayDynamicArray(stuDA_t *pHEAD,  const size_t array_size)
 {
 	size_t i;
 	printf("%-12s %-12s %-5s\n", "FAMILY NAME", "GIVEN NAME", "GRADE");
-	for (i = 0; i != array_size; ++i)
+	for (i = 0; i != (array_size-1); ++i)
 	{
 		printf("%-12s %-12s %2.3f\n", pHEAD[i].data.fName, pHEAD[i].data.gName,
 				pHEAD[i].data.grade);

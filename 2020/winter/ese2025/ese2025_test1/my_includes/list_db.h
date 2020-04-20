@@ -19,8 +19,8 @@
  *****************************************************/
 struct stuRecStruct
 {
-	char fName[20];
-	char gName[20];
+	char fName[STRSIZE];
+	char gName[STRSIZE];
 	float grade;
 };
 typedef struct stuRecStruct stuRec_t;

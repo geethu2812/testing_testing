@@ -33,8 +33,8 @@ int main(int argc, char *argv[])
 {
 	stuLL_t *pHead = NULL; // pointer to student data structure
 	size_t student_count = 0; // count of students
-	char fam_name[20] = ""; // variable to hold a last name
-	char giv_name[20] = ""; // variable to hold a given name
+	char fam_name[STRSIZE] = ""; // variable to hold a last name
+	char giv_name[STRSIZE] = ""; // variable to hold a given name
 	float grade = 0.0; // variable to hold a student grade
 	stuRec_t stdata;
 
